@@ -1,0 +1,53 @@
+* {
+  margin:0px;
+  padding:0px;
+}
+
+@mixin container {
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    margin:0 auto;
+    @include breakpoint($sm) {
+        width: 768px;
+    }
+    @include breakpoint($md) {
+      width: 992px;
+  }
+    @include breakpoint($lg) {
+        width: 1368px;
+    }
+}
+
+.button-small {
+    padding:19px 75px 19px 75px;
+    border-radius:20px;
+    width: fit-content;
+    font-size:16px;
+    font-weight:600;
+    color:$textButton;
+    text-decoration: none;
+    display:block;
+    &--primary {
+      background-color:$buttonPrimary;
+    }
+    &--secondary {
+      background-color:$buttonSecondary;
+    }
+  }
+  
+  .button-big {
+    padding:25px 119px 25px 119px;
+    border-radius:20px;
+    width: fit-content;
+    font-size:19px;
+    font-weight:400;
+    color:$textButton;
+    text-decoration: none;
+    display:block;
+    position:relative;
+    &--primary {
+      background-color:$buttonSecondary;
+    }
+  }
