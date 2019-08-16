@@ -1,7 +1,7 @@
 <template>
   <section class="steps-screen">
     <div class="steps-screen__container">
-      <img src="@/views/home/components/thirdScreen/assets/third-screen-image.png" class="steps-screen__image"/>
+      <img src="@/views/home/components/fifthScreen/assets/fifth-screen-image.png" class="steps-screen__image"/>
       <div class="steps-screen__content">
         <p class="steps-screen__title">Omówimy z Tobą każdy detal!</p>
         <ul class="steps-screen__list">
@@ -47,15 +47,15 @@ export default {
     order:2;
     margin-top:30px;
     width:350px;
-    height:352px;
+    height:409px;
     @include breakpoint($sm) {
       order:1;
-      width:312px;
-      height:314px;
+      width:311px;
+      height:363px;
     }
     @include breakpoint($lg) {
       width:540px;
-      height:543px;
+      height:631px;
     }
   }
   &__content {

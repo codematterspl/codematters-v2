@@ -6,6 +6,6 @@
 
 <script>
 export default {
-  name: 'LinkedinIcon'
+  name: 'LinkedinIcon',
 };
 </script>

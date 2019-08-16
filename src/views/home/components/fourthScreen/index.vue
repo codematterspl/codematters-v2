@@ -95,6 +95,7 @@ export default {
     color:$textPrimary;
     @include breakpoint($sm) {
       text-align: left;
+      font-size:14px;
     }
     @include breakpoint($lg) {
       margin-bottom:20px;
