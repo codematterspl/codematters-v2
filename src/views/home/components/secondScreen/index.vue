@@ -24,7 +24,7 @@
           <p class="second-screen__content">ZADOWLONYCH KLIENTÓW</p>
         </div>
       </div>
-      <a href="" class="second-screen__button button-big button-big--primary">Portfolio</a>
+      <a href="" class="second-screen__button button-small button-small--secondary">Zobacz nasze projekty</a>
     </div>
   </section>
 </template>
