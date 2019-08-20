@@ -1,12 +1,12 @@
 <template>
-  <div class="home">
-    <FirstScreen />
-    <SecondScreen />
-    <ThirdScreen />
-    <FourthScreen />
-    <FifthScreen />
-    <SixthScreen />
-  </div>
+    <div class="home">
+        <FirstScreen />
+        <SecondScreen />
+        <ThirdScreen />
+        <FourthScreen />
+        <FifthScreen />
+        <SixthScreen />
+    </div>
 </template>
 
 <script>
@@ -18,20 +18,22 @@ import FifthScreen from '@/views/home/components/fifthScreen/index.vue';
 import SixthScreen from '@/views/home/components/sixthScreen/index.vue';
 
 export default {
-  name: 'Home',
-  components: {
-    FirstScreen,
-    SecondScreen,
-    ThirdScreen,
-    FourthScreen,
-    FifthScreen,
-    SixthScreen,
-  },
+    name: 'Home',
+    components: {
+        FirstScreen,
+        SecondScreen,
+        ThirdScreen,
+        FourthScreen,
+        FifthScreen,
+        SixthScreen,
+    },
 };
+
 </script>
 
 <style lang="scss" scoped>
-  .home {
-    margin-top:75px;
-  }
+    .home {
+        margin-top: 75px;
+    }
+
 </style>

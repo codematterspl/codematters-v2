@@ -1,6 +1,6 @@
 * {
-  margin:0px;
-  padding:0px;
+    margin:0px;
+    padding:0px;
 }
 
 @mixin container {
@@ -13,8 +13,8 @@
         width: 768px;
     }
     @include breakpoint($md) {
-      width: 992px;
-  }
+        width: 992px;
+    }
     @include breakpoint($lg) {
         width: 1368px;
     }
@@ -30,14 +30,14 @@
     text-decoration: none;
     display:block;
     &--primary {
-      background-color:$buttonPrimary;
+        background-color:$buttonPrimary;
     }
     &--secondary {
-      background-color:$buttonSecondary;
+        background-color:$buttonSecondary;
     }
-  }
-  
-  .button-big {
+}
+
+.button-big {
     padding:26px 70px 26px 70px;
     border-radius:20px;
     width: fit-content;
@@ -48,6 +48,6 @@
     display:block;
     position:relative;
     &--primary {
-      background-color:$buttonSecondary;
+        background-color:$buttonSecondary;
     }
-  }
+}
