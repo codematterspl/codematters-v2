@@ -3,51 +3,28 @@
     padding:0px;
 }
 
-@mixin container {
-    padding-left: 20px;
-    padding-right: 20px;
-    box-sizing: border-box;
-    width: 100%;
-    margin:0 auto;
-    @include breakpoint($sm) {
-        width: 768px;
-    }
+h1 {
+    font-size: 32px;
+    font-weight: 900;
+
     @include breakpoint($md) {
-        width: 992px;
+        font-size: 48px;
     }
+}
+
+h2 {
+    font-size: 16px;
+    font-weight: 900;
+
+    @include breakpoint($md) {
+        font-size: 24px;
+    }
+}
+
+@mixin page-paddings() {
+    padding: 0 32px;
+
     @include breakpoint($lg) {
-        width: 1368px;
-    }
-}
-
-.button-small {
-    padding:18px 54px 18px 54px;
-    border-radius:20px;
-    width: fit-content;
-    font-size:16px;
-    font-weight:600;
-    color:$textButton;
-    text-decoration: none;
-    display:block;
-    &--primary {
-        background-color:$buttonPrimary;
-    }
-    &--secondary {
-        background-color:$buttonSecondary;
-    }
-}
-
-.button-big {
-    padding:26px 70px 26px 70px;
-    border-radius:20px;
-    width: fit-content;
-    font-size:19px;
-    font-weight:400;
-    color:$textButton;
-    text-decoration: none;
-    display:block;
-    position:relative;
-    &--primary {
-        background-color:$buttonSecondary;
+        padding: 0 128px;
     }
 }

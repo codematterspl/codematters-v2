@@ -1,0 +1,19 @@
+@mixin image-container() {
+    width: 100%;
+
+    @include breakpoint($lg) {
+        width: 50%;
+    }
+
+    .image {
+        width: 100%;
+    }
+}
+
+@mixin description-container() {
+    .text {
+        color: $textSecondary;
+        font-size: 16px;
+        margin-top: 16px;
+    }
+}
