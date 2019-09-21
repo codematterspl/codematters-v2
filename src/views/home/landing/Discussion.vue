@@ -22,12 +22,19 @@ export default {
     display: flex;
     flex-direction: column;
     text-align: center;
-    align-items: center;
-    margin-top: 32px;
-    background-color: #F9F9F9;
     min-height: 100vh;
 
-    @include page-paddings();
+    &__description {
+        @include description-container();
+        padding-top: 32px;
+        order: 1;
+    }
+
+    &__image {
+        @include image-container();
+        padding-top: 32px;
+        order: 2;
+    }
 
     @include breakpoint($lg) {
         flex-direction: row;
@@ -40,18 +47,6 @@ export default {
         &__image {
             order: 1;
         }
-    }
-
-    &__description {
-        @include description-container();
-        padding-top: 32px;
-        order: 1;
-    }
-
-    &__image {
-        @include image-container();
-        padding-top: 32px;
-        order: 2;
     }
 }
 </style>

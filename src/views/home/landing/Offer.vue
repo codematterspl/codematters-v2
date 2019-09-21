@@ -30,8 +30,6 @@ export default {
     align-items: center;
     min-height: calc(100vh - (48px * 2 + 16px));
 
-    @include page-paddings();
-
     @include breakpoint($lg) {
         min-height: calc(100vh - 48px * 3);
         flex-direction: row;

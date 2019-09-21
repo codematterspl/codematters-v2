@@ -16,9 +16,14 @@ export default {
 </script>
 <style lang="scss" scoped>
 .contact {
-    @include page-paddings();
     padding-top: 32px;
     text-align: center;
+    padding-bottom: 64px;
+
+    @include breakpoint($lg) {
+        width: 600px;
+        margin: 0 auto;
+    }
 
     .header {
         text-transform: uppercase;

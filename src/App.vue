@@ -23,5 +23,11 @@ export default {
     @import url('https://fonts.googtleapis.com/css?family=Montserrat:400,500,600,700,800,900&display=swap');
     font-family: 'Montserrat', sans-serif;
     position: relative;
+
+    @include page-paddings();
+    @include breakpoint($lg) {
+        width: 1170px;
+        margin: 0 auto;
+    }
 }
 </style>

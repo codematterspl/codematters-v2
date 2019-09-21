@@ -24,8 +24,6 @@ export default {
     margin-bottom: 48px;
     height: 48px;
 
-    @include page-paddings();
-
     @include breakpoint($lg) {
         margin: 48px 0;
     }
