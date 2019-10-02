@@ -1,4 +1,5 @@
 <template>
+    <div>
     <section class="discussion">
         <div class="discussion__image">
             <img class="image" src="@/assets/images/discussion.png" />
@@ -9,6 +10,7 @@
                     Nullam ut imperdiet dolor, in aliquet justo.</p>
         </div>
     </section>
+    </div>
 </template>
 <script>
 export default {
@@ -24,6 +26,11 @@ export default {
     text-align: center;
     min-height: 100vh;
 
+    @include breakpoint($md) {
+        min-height: 50vh;
+        align-items: center;
+    }
+
     &__description {
         @include description-container();
         padding-top: 32px;
@@ -36,7 +43,7 @@ export default {
         order: 2;
     }
 
-    @include breakpoint($lg) {
+    @include breakpoint($md) {
         flex-direction: row;
         text-align: left;
 

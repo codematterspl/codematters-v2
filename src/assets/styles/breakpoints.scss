@@ -1,11 +1,11 @@
 // Small tablets and large smartphones (landscape view)
-$screen-sm-min: 320px;
+$screen-sm-min: 768px;
 
 // ipads
-$screen-md-min: 768px;
+$screen-md-min: 992px;
 
 // Tablets and desktops
-$screen-lg-min: 1368px;
+$screen-lg-min: 1200px;
 
 $sm: (min: $screen-sm-min);
 $md: (min: $screen-md-min);

@@ -30,10 +30,14 @@ export default {
     align-items: center;
     min-height: calc(100vh - (48px * 2 + 16px));
 
-    @include breakpoint($lg) {
-        min-height: calc(100vh - 48px * 3);
+    @include breakpoint($md) {
+        min-height: calc(100vh - 48px * 15);
         flex-direction: row;
         text-align: left;
+    }
+
+    @include breakpoint($lg) {
+        min-height: 50vh;
     }
 
     &__description {
@@ -47,12 +51,13 @@ export default {
             font-size: 16px;
             color: #fff;
             margin-top: 24px;
+            cursor: pointer;
 
-            @include breakpoint($md) {
+            @include breakpoint($sm) {
                 width: 420px;
             }
 
-            @include breakpoint($lg) {
+            @include breakpoint($md) {
                 width: 272px;
             }
         }
@@ -62,9 +67,14 @@ export default {
             display: flex;
             justify-content: center;
 
+            @include breakpoint($md) {
+                justify-content: flex-start;
+            }
+
             .social {
                 margin: 0 16px;
                 fill: $textSecondary;
+                cursor: pointer;
             }
         }
     }

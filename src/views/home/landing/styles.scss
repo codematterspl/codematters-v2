@@ -1,12 +1,21 @@
 @mixin image-container() {
     width: 100%;
 
-    @include breakpoint($lg) {
+    @include breakpoint($md) {
         width: 50%;
     }
 
     .image {
         width: 100%;
+
+        @include breakpoint($md) {
+            width: 440px;
+            margin: 15px;
+        }
+        
+        @include breakpoint($lg) {
+            width: 540px;
+        }
     }
 }
 

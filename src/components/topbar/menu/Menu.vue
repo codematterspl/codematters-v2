@@ -25,7 +25,7 @@ export default {
     &__desktop {
         display: none;
 
-        @include breakpoint($lg) {
+        @include breakpoint($md) {
             display: block;
         }
 
@@ -43,13 +43,13 @@ export default {
     }
 
     &__mobile {
-        @include breakpoint($lg) {
+        @include breakpoint($md) {
             display: none;
         }
     }
 
     &__hamburger {
-        @include breakpoint($lg) {
+        @include breakpoint($md) {
             display: none;
         }
     }

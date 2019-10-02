@@ -24,7 +24,7 @@ export default {
     margin-bottom: 48px;
     height: 48px;
 
-    @include breakpoint($lg) {
+    @include breakpoint($md) {
         margin: 48px 0;
     }
 }

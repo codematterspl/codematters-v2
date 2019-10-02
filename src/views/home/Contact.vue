@@ -2,7 +2,7 @@
     <div class="contact">
         <h2 class="header">Chcesz dowiedzieć się więcej?<br />Napisz do nas!</h2>
         <form class="form">
-            <input class="input" type="text" name="name" placeholder="Imię" />
+            <input class="input" type="text" name="name" placeholder="Imię i nazwisko" />
             <input class="input" type="email" name="name" placeholder="E-mail*" />
             <textarea class="textarea" placeholder="Treść wiadomości*"></textarea>
             <span class="mandatory-label">* - pola obowiązkowe</span>
@@ -21,18 +21,24 @@ export default {
     padding-bottom: 64px;
 
     @include breakpoint($lg) {
-        width: 600px;
+        width: 944px;
         margin: 0 auto;
     }
 
     .header {
         text-transform: uppercase;
-        margin-bottom: 16px;
+        margin-bottom: 32px;
     }
 
     .form {
         display: flex;
         flex-direction: column;
+
+        @include breakpoint($md) {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
 
         .input {
             height: 64px;
@@ -43,6 +49,11 @@ export default {
             color: #939598;
             outline: none;
             margin-bottom: 16px;
+
+            @include breakpoint($md) {
+                width: 49%;
+                box-sizing: border-box;
+            }
         }
 
         .textarea {
@@ -54,6 +65,10 @@ export default {
             color: #939598;
             outline: none;
             margin-bottom: 16px;
+
+            @include breakpoint($md) {
+                width:100%;
+            }
         }
 
         .button {
@@ -70,7 +85,9 @@ export default {
             }
 
             @include breakpoint($lg) {
-                width: 272px;
+                width: 464px;
+                margin-left: auto;
+                margin-right: auto;
             }
         }
 
@@ -78,6 +95,10 @@ export default {
             color: #939598;
             font-size: 12px;
             text-align: left;
+
+            @include breakpoint($md) {
+                width: 100%;
+            }
         }
     }
 }
