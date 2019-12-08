@@ -43,7 +43,6 @@ export default {
             background-color: #ED274F;
             height: 56px;
             width: 100%;
-            border-radius: 20px;
             font-size: 16px;
             color: #fff;
             margin-top: 24px;
@@ -57,14 +56,25 @@ export default {
             }
         }
 
+        .text {
+            padding: 16px 0;
+
+            @include breakpoint($md) {
+                padding: 32px 0;
+                padding-right: 32px;
+            }
+        }
+
         .socials {
             margin-top: 32px;
             display: flex;
-            justify-content: center;
 
             .social {
-                margin: 0 16px;
                 fill: $textSecondary;
+            }
+
+            .social:nth-child(2) {
+                margin-left: 16px;
             }
         }
     }

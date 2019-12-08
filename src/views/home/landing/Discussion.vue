@@ -39,8 +39,13 @@ export default {
     @include breakpoint($lg) {
         flex-direction: row;
         text-align: left;
+        align-items: center;
 
         &__description {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0 32px;
             order: 2;
         }
 
